@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pixiv-bot"
+version = "1.5.0"
+description = "pixiv-bot"
+authors = ["ssttkkl <huang.wen.long@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nonebot2 = "^2.0.0rc1"
+httpx = "^0.23.0"
+uvloop = "^0.17.0"
+
+[tool.poetry.dev-dependencies]
+nb-cli = "^0.6.7"
+
+[tool.nonebot]
+plugins = ["nonebot_plugin_pixivbot"]
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
